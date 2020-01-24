@@ -298,9 +298,84 @@ h3{
 
 
 .wix-tools{
-  background-color: gray;
+  width: 99%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border: 2px solid #000000;
 }
 
+
+.wix-tools article{
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.article-content{
+  flex-basis: 50%;
+}
+
+article figure{
+  flex-basis: 50%;
+}
+
+.wix-tools ul li:nth-child(1){
+  width: 100%;
+  border-bottom: 2px solid #000000;
+}
+
+.wix-tools ul li:nth-child(2),
+.wix-tools ul li:nth-child(3){
+  width: 50%;
+}
+
+.wix-tools ul li:nth-child(2){
+  float: left;
+}
+
+.wix-tools ul li:nth-child(2) article{
+  border-right: 2px solid #000000;
+}
+
+h4{
+  font-size: 42px;
+  text-transform: capitalize;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+h4 + p {
+  font-size: 42px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: capitalize;
+  word-spacing: -2px;
+  letter-spacing: -2px;
+  line-height: 49px;
+}
+
+.article-content p:nth-child(3){
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  padding-top: 29px;
+}
+
+.article-content a{
+  padding-top: 42px;
+}
+
+.sub-wrapper{
+  padding: 103px;
+  box-sizing: border-box;
+}
+
+.wix-tools ul li:nth-child(2) .article-content,
+.wix-tools ul li:nth-child(2) figure,
+.wix-tools ul li:nth-child(3) .article-content,
+.wix-tools ul li:nth-child(3) figure {
+  flex-basis: 100%;
+} 
 /*=================================
   main styling ends here
 =================================*/

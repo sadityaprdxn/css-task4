@@ -128,18 +128,27 @@ li {
 
 header{
   padding: 19px 0 33px;
+  
+}
+
+header div:first-child{
+  position: relative;
 }
 
 header a{
   text-transform: capitalize;
   color: #FFFFFF;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: lighter;
   font-family: 'Montserrat', sans-serif;
 }
 
 h1{
   display: inline-block;
+}
+.navbar{
+  display: inline-block;
+  padding-left: 2%;
 }
 
 .hamburger{
@@ -148,7 +157,6 @@ h1{
 
 nav{
   display: inline-block;
-  padding-left: 2%;
 }
 
 nav a{
@@ -156,9 +164,9 @@ nav a{
 }
 
 .sign-in{
-  display: -webkit-inline-box;
   display: inline-block;
-  float: right;
+  position: absolute;
+  right: 0;
 }
 
 .down-side-arrow::after{
@@ -194,6 +202,8 @@ nav a{
 }
 
 
+
+
 .start{
   
   background-color:#3689B3; 
@@ -227,7 +237,69 @@ h2{
 }
 
 
+h3{
+  font-size: 72px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  display: inline-block;
+  width: 45%;
 
+}
+
+.welcome div:first-child{
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  padding: 159px 0 192px;
+}
+
+.welcome p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  line-height: 35px;
+  padding: 10px 0 36px;
+}
+
+.welcome article{
+  display: inline-block;
+  width: 45%;
+}
+
+.right-side-arrow{
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #292929;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  position: relative;
+}
+
+.right-side-arrow::before{
+  content: '\f105';
+  font-family: "fontAwesome";
+  text-indent: 0;
+  float: right;
+  font-size: 25px;
+  color: #292929;
+  padding-left: 4px;
+}
+
+.right-side-arrow::after{
+  content: ' ';
+  width: 85%;
+  height: 10px;
+  border-bottom: 2px solid #aaaaaa;
+  padding-left: 4px;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+
+.wix-tools{
+  background-color: gray;
+}
 
 /*=================================
   main styling ends here

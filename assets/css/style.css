@@ -205,7 +205,7 @@ li {
   
   .start{
   
-    background-color:#3689B3; 
+    background-color:#6CC2EA; 
     /* #65BADE */
     width: 49.5%;
     text-align: center;
@@ -879,7 +879,24 @@ li {
   
   /*media query starts*/
   /*media query for 995px starts here*/
+
+  @media only screen and (max-width: 1350px){
+    .wix-tools h4 + p{
+        font-size: 29px;
+    }
+  }
   @media only screen and (max-width: 1024px) {
+
+    .wrapper{
+        max-width: 1360px;
+        width: 90%; 
+        margin: 0 auto;
+    }
+
+    .final-wrapper{
+        width: 90%; 
+        margin: 0 auto;
+    }
 
     .navbar nav,
     .navbar .sign-in{
@@ -915,7 +932,7 @@ li {
     }
 
     .wix-tools{
-        width: 85%;
+        width: 90%;
         border-style: none;
     }
 
@@ -942,6 +959,18 @@ li {
         border-style: none;
     }
 
+    .wix-tools ul li:nth-child(1) article:first-child{
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+                flex-direction: column-reverse;
+    }
+
+    article figure{
+        width: 100%;
+    }
+
     
 
     .features h3{
@@ -950,12 +979,47 @@ li {
     }
 
     .feature-packs{
-        display: none;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+                flex-direction: row;
+        overflow: auto;
+        margin-bottom: 50px;
+    }
+
+    .feature-box{
+        flex-basis: 100%;
+        display: -webkit-box;
+        display: flex;
+        padding-bottom: 10px;
+    }
+
+    .feature-packs .feature-box:nth-child(2),
+    .feature-packs .feature-box:nth-child(3){
+        /* display: none; */
+    }
+
+    .feature-box article:last-child{
+        position: static;
+    }
+
+    .feature-box article{
+        width: 90%;
+        display: inline-block;
+        float: left;
+    }
+
+    .feature-packs div:first-child article:first-child,
+    .feature-packs div:nth-child(2) article:first-child,
+    .feature-packs div:last-child article:first-child {
+        margin: 0;
     }
 
     .right-side-double-arrow{
         display: inline-block;
         font-size: 27px;
+        width: auto;
     }
 
     .tricks figure{

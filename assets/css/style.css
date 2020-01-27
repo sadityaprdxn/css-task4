@@ -101,7 +101,7 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 85%; 
+  width: 84%; 
   margin: 0 auto;
 }
 /*=================================
@@ -905,9 +905,102 @@ li {
         display: block;
     }
 
-    h3,
+    h3{
+        width: 100%;
+        padding-bottom: 50px;
+        font-size: 60px;
+    }
     .welcome article{
         width: 100%;
+    }
+
+    .wix-tools{
+        width: 85%;
+        border-style: none;
+    }
+
+    .wix-tools article{
+        display: block;
+    }
+
+    .wix-tools ul li:nth-child(2),
+    .wix-tools ul li:nth-child(3){
+        width: 100%;
+    }
+
+    .sub-wrapper{
+        padding: 0;
+    }
+
+    .wix-tools article figure,
+    .wix-tools article .article-content{
+        margin-bottom: 50px;
+    }
+
+    .wix-tools ul li:nth-child(2) article,
+    .wix-tools ul li:nth-child(1){
+        border-style: none;
+    }
+
+    
+
+    .features h3{
+        width: 100%;
+        font-size: 45px;
+    }
+
+    .feature-packs{
+        display: none;
+    }
+
+    .right-side-double-arrow{
+        display: inline-block;
+        font-size: 27px;
+    }
+
+    .tricks figure{
+        position: static;
+        margin-bottom: 50px;
+    }
+
+    .online-business,
+    .best-choice{
+        width: 100%;
+    }
+
+    .steps > div{
+        padding-bottom: 100px;
+        display: block;
+        position: relative;
+    }
+
+    .steps div:first-child div:first-child,
+    .steps div:last-child div:last-child{
+        width: 100%;
+    }
+
+    .steps h3{
+        font-size: 60px;
+        line-height: 80px;
+    }
+
+    .steps a{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .steps a:last-of-type{
+        margin-left: 50%;
+    }
+
+
+
+
+
+
+    footer{
+        display: none;
     }
   }
   

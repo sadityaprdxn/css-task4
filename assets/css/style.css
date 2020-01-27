@@ -514,7 +514,7 @@ li {
     color: #000000;
     text-transform: capitalize;
     display: block;
-    width: 30.5%;
+    width: 31.5%;
     text-align: center;
     margin: 0 auto;
     position: relative;
@@ -889,7 +889,7 @@ li {
 
   @media only screen and (max-width: 1400px){
     .right-side-double-arrow{
-        width: 35%;
+        font-size: 40px;
     }
   }
 
@@ -1129,6 +1129,13 @@ li {
 
     footer{
         display: none;
+    }
+  }
+
+
+  @media only screen and (max-width: 425px){
+    .right-side-double-arrow{
+        font-size: 18px;
     }
   }
   

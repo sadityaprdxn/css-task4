@@ -431,14 +431,9 @@ li {
     padding: 15% 0 9%;
   }
   
-  .feature-box{
-    width: 100%;
-    position: relative;
-    padding-bottom: 150px;
-  }
   
-  .feature-box article{
-    width: 30%;
+  .features article{
+    width: 60%;
   }
   
   h5{
@@ -459,51 +454,43 @@ li {
   }
   
   
-  .feature-box article:hover{
+  .features article:hover{
     box-shadow: 5px 10px 18px #888888;
     border-radius: 20px;
   }
-  
-  
-  .feature-box article:last-child{
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  
-  .feature-packs div:first-child article:first-child{
-    margin-left: 8%;
-  }
-  
-  .feature-packs div:first-child article:last-child{
-    right: 11%;
-    top: 100px;
-  }
-  
-  .feature-packs div:nth-child(2) article:first-child{
-    margin-left: 16%;
-  }
-  
-  .feature-packs div:nth-child(2) article:last-child{
-    top:121px;
-    right: 20%;
-  }
-  
-  .feature-packs div:last-child article:first-child{
-    margin-left: 10%;
-  }
-  
-  .feature-packs div:last-child article:last-child{
-    top: 20px;
-    right: 13%;
+
+  .features ul li{
+    width: 49%;
   }
 
-  .feature-packs li:nth-child(1){
-      width: 100%;
+  .feature-two article{
+    margin: 0 auto;
   }
+
+  .feature-three article{
+    margin: 0 auto;
+  }
+
+  .feature-four article{
+    margin-top: 50px;
+  }
+
+  .feature-six article{
+    margin: 50px auto 0 100px;
+  }
+  
+  
 
   .slider-controls{
       display:none;
+  }
+
+  .features > div div:nth-child(4){
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    padding-top: 100px;
   }
   
   
@@ -513,10 +500,6 @@ li {
     font-weight: 700;
     color: #000000;
     text-transform: capitalize;
-    display: block;
-    width: 31.5%;
-    text-align: center;
-    margin: 0 auto;
     position: relative;
   }
   
@@ -887,21 +870,10 @@ li {
   /*media query starts*/
   /*media query for 995px starts here*/
 
-  @media only screen and (max-width: 1400px){
-    .right-side-double-arrow{
-        font-size: 40px;
-    }
-  }
 
   @media only screen and (max-width: 1340px){
     .wix-tools h4 + p{
         font-size: 29px;
-    }
-  }
-
-  @media only screen and (max-width: 1200px){
-    .right-side-double-arrow{
-        width: 45%;
     }
   }
 
@@ -919,13 +891,58 @@ li {
         margin: 0 auto;
     }
 
+    .container{
+      overflow: hidden;
+    }
+
+    header{
+      background-color: #FFFFFF;
+      position: relative;
+    }
+
     .navbar nav,
     .navbar .sign-in{
-        display: none;
+        position: absolute;
+        width: 100%;
+        background-color: #000000;
+    }
+
+    .navbar nav li,
+    .navbar .sign-in{
+      display: block;
+      text-align: center;
+    }
+
+    .navbar nav{
+      left: 120%;
+      bottom: -229px;
+      -webkit-transition-duration: 2s;
+              transition-duration: 2s;
+      -webkit-transition-timing-function: ease-in-out;
+              transition-timing-function: ease-in-out;
+    }
+
+    .navbar .sign-in{
+      left: 120%;
+      bottom: -288px;
+      padding: 10px 0;
+      -webkit-transition-duration: 2s;
+              transition-duration: 2s;
+      -webkit-transition-timing-function: ease-in-out;
+              transition-timing-function: ease-in-out;
+    }
+
+    .globe{
+      display: none;
     }
 
     .hamburger{
         display: inline-block;
+    }
+
+    .navbar:hover nav,
+    .navbar:hover .sign-in{
+      left: 0;
     }
 
     header div:first-child{
@@ -933,6 +950,9 @@ li {
         display: flex;
         -webkit-box-pack: justify;
                 justify-content: space-between;
+        -webkit-box-align: center;
+                align-items: center;
+        
     }
 
     .start{
@@ -1008,40 +1028,30 @@ li {
         margin-bottom: 50px;
     }
 
-    .feature-box{
-        flex-basis: 100%;
-        display: -webkit-box;
-        display: flex;
-        padding-bottom: 10px;
+    .features ul li{
+      width: 100%;
     }
 
-    .feature-packs .feature-box:nth-child(1) article:nth-child(2){
-        display: none;
+    .features article{
+      margin: 0;
+      width: 100%;
     }
 
-    .feature-packs .feature-box:nth-child(2),
-    .feature-packs .feature-box:nth-child(3) {
-        display: none;
+    .feature-two,
+    .feature-three,
+    .feature-four,
+    .feature-five,
+    .feature-six{
+
+      display: none;
     }
 
-    .feature-box article:last-child{
-        position: static;
-    }
 
-    .feature-box article{
-        width: 100%;
-        display: inline-block;
-    }
-
-    .feature-packs div:first-child article:first-child,
-    .feature-packs div:nth-child(2) article:first-child,
-    .feature-packs div:last-child article:first-child {
-        margin: 0;
-    }
 
     .slider-controls{
         display: block;
         text-align: center;
+        padding-top: 50px;
     }
 
     .slider-button{
@@ -1084,6 +1094,10 @@ li {
         display: inline-block;
         font-size: 27px;
         width: auto;
+    }
+
+    .features > div div:nth-child(4){
+      padding-top: 50px;
     }
 
     .tricks figure{
